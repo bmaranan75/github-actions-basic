@@ -1,4 +1,4 @@
-name: First Workflow
+name: Complex Workflow
 
 on: push
 
