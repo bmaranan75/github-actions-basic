@@ -1,0 +1,25 @@
+name: First Workflow
+
+on: push
+
+jobs:
+	first-job:
+		runs-on: ubuntu-latest
+		steps:
+			-	uses: actions/checkout@v3
+			-	name: Display Ubuntu Date
+				run: date
+
+	second-job:
+		runs-on: windows-latest
+		steps:
+			-	uses: actions/checkout@v3
+			-	name: Display Windows Date
+				run: Get-Date
+
+	thirds-job:
+		runs-on: macos-latest
+			-	uses: actions/checkout@v3
+			-	name: Display MacOS date
+				run: date
+	
