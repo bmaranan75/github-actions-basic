@@ -27,5 +27,7 @@ jobs:
   steps:
    - uses: actions/checkout@v3
    - name: Fourth Job waiting for all 3 others to complete before running
-     run: echo "all jobs completed"
+     run: |
+      echo "all jobs completed"
+      date
   
