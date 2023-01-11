@@ -9,3 +9,15 @@ jobs:
    - uses: actions/checkout@v3
    - name: Display Ubuntu Date
      run: date
+ second-job:
+  runs-on: windows-latest
+  steps:
+   - uses: actions/checkout@v3
+   - name: Display Date on Windows Latest
+     run: Get-Date
+ third-job:
+  runs-on: macos-latest
+  steps:
+   - uses: actions/checkout@v3
+   - name: Display Date on MacOS
+     run: date
