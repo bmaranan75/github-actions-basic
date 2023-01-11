@@ -21,3 +21,11 @@ jobs:
    - uses: actions/checkout@v3
    - name: Display Date on MacOS
      run: date
+ fourth-job:
+  runs-on: macos-latest
+  needs: [first-job,second-job,third-job]
+  steps:
+   - uses: actions/checkout@v3
+   - name: Fourth Job waiting for all 3 others to complete before running
+     run: echo "all jobs completed"
+  
