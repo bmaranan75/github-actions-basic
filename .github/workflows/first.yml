@@ -13,6 +13,7 @@ jobs:
      run: |
       date
       echo ${{ env.API_KEY }}
+      echo ${{ secrets.API_KEY }}
  second-job:
   runs-on: windows-latest
   steps:
